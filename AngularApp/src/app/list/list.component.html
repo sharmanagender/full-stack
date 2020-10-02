@@ -1,0 +1,34 @@
+
+<div class="row">
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+         <div class="row">
+           <h2>Product List</h2>
+          
+            <table class="responsive-table highlight">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Processor</th>
+                  <th>RAM</th>
+                  <th>Type</th>
+                  <th>Descrition</th>
+                </tr>
+              </thead>
+              <tr *ngFor="let emp of employeeService.employees">
+                <td>{{emp.Name}}</td>
+                <td>{{emp.Processor}}</td>
+                <td>{{emp.RAM}}</td>
+                <td>{{emp.Type}}</td>
+                <td>{{emp.Descrition}}</td>
+             </tr>
+            
+            </table>
+            </div>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+         
